@@ -12,15 +12,16 @@ export const Home = () => {
 
   const handleOnSearchSubmit = (value) => {
     setKeyword(value);
-    console.log("Search: ", value); //Função quando o search da um submit
     setRelatedKeywords([
       {
-        keyword: "Teste",
+        keyword: "Keyword 1",
         trend: 80,
+        uses: 20,
       },
-      { keyword: "Pepe lindao", trend: 50 },
-      { keyword: "Pepe maravilhoso", trend: 20 },
-      { keyword: "Pepe do teste", trend: 5 },
+      { keyword: "Keyword 2", trend: 75, uses: 15 },
+      { keyword: "Keyword 3", trend: 50, uses: 10 },
+      { keyword: "Keyword 4", trend: 20, uses: 5 },
+      { keyword: "Keyword 5", trend: 5, uses: 2 },
     ]);
   };
 
@@ -46,6 +47,7 @@ export const Home = () => {
                 key={relatedKeyword.keyword}
                 keyword={relatedKeyword.keyword}
                 trend={relatedKeyword.trend}
+                uses={relatedKeyword.uses}
               />
             ))}
             <p></p>

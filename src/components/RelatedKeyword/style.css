@@ -4,16 +4,30 @@
 
 .keyword-container {
   width: 100%;
-  display: grid;
-  grid-template-columns: repeat(2, minmax(200px, 1fr));
+  display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .keyword {
-  padding-right: 30px;
-  text-align: end;
+  padding-right: 20px;
+  padding-left: 20px;
+  text-align: center;
   font-size: 20px;
+  min-width: 200px;
 }
 .trend {
+  padding-right: 20px;
+  padding-left: 20px;
   font-size: 20px;
+  min-width: 100px;
+  text-align: center;
+}
+
+.uses {
+  font-size: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+  min-width: 100px;
+  text-align: center;
 }

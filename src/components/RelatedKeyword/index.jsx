@@ -1,6 +1,6 @@
 import "./style.css";
 
-export const RelatedKeyword = ({ keyword, trend }) => {
+export const RelatedKeyword = ({ keyword, trend, uses }) => {
   const clamp = (num, min, max) => {
     return num <= min ? min : num >= max ? max : num;
   };
@@ -24,6 +24,16 @@ export const RelatedKeyword = ({ keyword, trend }) => {
         }}
       >
         {trend}%
+      </p>
+
+      <p
+        className="uses"
+        style={{
+          fontSize: 20 + trend / 10 + "px",
+          fontWeight: clamp(trend * 10, 200, 800),
+        }}
+      >
+        {uses}
       </p>
     </div>
   );
