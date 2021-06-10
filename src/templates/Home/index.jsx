@@ -1,19 +1,14 @@
-import { useEffect, useState, useCallback } from "react";
+import { useState } from "react";
 
 import "./style.css";
 
 import { InputSearch } from "../../components/InputSearch";
 import { RelatedKeyword } from "../../components/RelatedKeyword";
-import { getAmazonBestSelers } from "../../utils/my-poseo-amazon";
 import logo from "../../assets/avatar.png";
 
 export const Home = () => {
   const [keyword, setKeyword] = useState("");
   const [relatedKeywords, setRelatedKeywords] = useState([]);
-
-  const handleMyPoseoSearch = () => {
-    console.log(getAmazonBestSelers());
-  };
 
   const handleOnSearchSubmit = (value) => {
     setKeyword(value);
