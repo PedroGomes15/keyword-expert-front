@@ -1,0 +1,41 @@
+.input-container {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.input-search {
+  width: 100%;
+  background: #fff;
+  border: 1px solid #dfe1e5;
+  box-shadow: none;
+  border-radius: 24px;
+  z-index: 3;
+  height: 44px;
+  margin: 0 auto;
+  padding-left: 2vh;
+  font-size: 20px;
+}
+
+.input-submit {
+  position: absolute;
+  border: none;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+  z-index: 5;
+  background-image: url(../../assets/loupe.png); /* 16px x 16px */
+  background-color: transparent; /* make the button transparent */
+  background-repeat: no-repeat; /* make the background image appear only once */
+  background-position: center;
+  background-size: 20px 20px;
+  cursor: pointer;
+}
+
+.input-search:focus {
+  outline: none;
+  box-shadow: inset 1px 1px rgba(82, 82, 82, 0.479);
+}

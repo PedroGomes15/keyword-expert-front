@@ -1,0 +1,19 @@
+:root {
+  --main-bg-color: pink;
+}
+
+.keyword-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(200px, 1fr));
+  align-items: center;
+}
+
+.keyword {
+  padding-right: 30px;
+  text-align: end;
+  font-size: 20px;
+}
+.trend {
+  font-size: 20px;
+}
